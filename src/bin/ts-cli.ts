@@ -2,6 +2,7 @@ import { config } from 'dotenv';
 config();
 
 import { Cac } from 'cac';
+import chalk from 'chalk';
 import { hello } from '../hello';
 
 /**
@@ -37,7 +38,7 @@ export class TsCli {
         },
         (input: any, flags: any) => {
           const output = hello(flags.t || undefined);
-          console.log(output);
+          console.log(`${chalk.red(output)}`);
         }
       )
       .option('target', {
