@@ -1,0 +1,44 @@
+{
+  "name": "starter-typescript-cli",
+  "version": "0.0.1",
+  "description": "Simple starter typescript CLI project",
+  "main": "dist/ts-cli.js",
+  "bin": {
+    "wfec": "bin/ts-cli"
+  },
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc --pretty --project tsconfig.json",
+    "watch": "npm run build -- --watch",
+    "start": "npm run build && node bin/ts-cli",
+    "dev": "ts-node src/bin/ts-cli",
+    "dev:watch": "nodemon -w src -x \"npm run ts-node\"",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Michael Griffiths",
+    "email": "michael@ildesigns.co.uk"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "cac": "^5.0.10",
+    "chalk": "^2.4.1",
+    "dotenv": "^6.0.0",
+    "figures": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^4.0.3",
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.9.4",
+    "jest": "^23.5.0",
+    "nodemon": "^1.18.4",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.1.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "typescript": "^3.0.3"
+  }
+}

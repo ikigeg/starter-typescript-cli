@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const dotenv = require('dotenv');
+const path = require('path');
+
+const { error } = dotenv.config({
+  path: path.join(__dirname, '..', '.env')
+});
+
+if (error) {
+  throw error
+}
+
+require('../dist/bin/ts-cli.js');
