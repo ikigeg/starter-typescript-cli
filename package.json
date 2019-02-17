@@ -1,6 +1,6 @@
 {
   "name": "starter-typescript-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple starter typescript CLI project",
   "main": "dist/ts-cli.js",
   "bin": {
@@ -23,22 +23,22 @@
   },
   "license": "ISC",
   "dependencies": {
-    "cac": "^5.0.10",
-    "chalk": "^2.4.1",
-    "dotenv": "^6.0.0",
+    "cac": "^6.4.2",
+    "chalk": "^2.4.2",
+    "dotenv": "^6.2.0",
     "figures": "^2.0.0"
   },
   "devDependencies": {
-    "@types/dotenv": "^4.0.3",
-    "@types/jest": "^23.3.1",
-    "@types/node": "^10.9.4",
-    "jest": "^23.5.0",
-    "nodemon": "^1.18.4",
-    "rimraf": "^2.6.2",
-    "ts-jest": "^23.1.4",
-    "ts-node": "^7.0.1",
-    "tslint": "^5.11.0",
-    "tslint-config-airbnb": "^5.11.0",
-    "typescript": "^3.0.3"
+    "@types/dotenv": "^6.1.0",
+    "@types/jest": "^24.0.5",
+    "@types/node": "^11.9.4",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.10",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.3.3"
   }
 }
