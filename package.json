@@ -1,6 +1,6 @@
 {
   "name": "starter-typescript-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple starter typescript CLI project",
   "main": "dist/ts-cli.js",
   "bin": {
